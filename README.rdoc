@@ -2,28 +2,93 @@
 
 In this project, I will walk you through steps to develop app like AirBnb with core functionalities from scratch. You don't need to learn everything about HTML, CSS, Javascript or Ruby on Rails to just create an web app. In my methodology which I called POA (Product-Oriented-Approach), you just need to learn what you need. Doing this way, it won't make you a super star developer but will get you something REAL quickly and efficiently, especially for Entrepreneurs & Founders.
 
-== What skills will you learn on this project?
-
-* How to quickly create a web app with Ruby on Rails.
-* Style your web app easily and quickly with Bootstrap.
-* Design your UI like a modern style using in AirBnb.
-* Use Facebook to authenticate your users.
-* How to send transactional emails with Mandrill/Sendgrid.
-* How to create Notification messages for actions.
-* How to create Object models for a business idea.
-* Handle photo uploading process with AJAX.
-* Process searching function with different criteria.
-* Handle location searching on Google Map.
-* Handle jQuery event for UI controls.
-* How to handle PayPal webhook to process payments.
 
 == Project will be broken down to small tasks like real-life projects.
 
 === Task 1: Installation
- Install Sublime Text 3
- Install SQLiteBrowser
- Install Ruby, Rails
- Create Simple Project with Bootstrap
+ 1.1.Install Sublime Text 3
+ 1.2.Install SQLiteBrowser
+ 1.3.Install Ruby, Rails
+ 1.4.Create Simple Project with Bootstrap
+ 
+=== Task 2: Working with Basic Project
+ 2.1.Create Basic Authentication
+ 2.2.Building Navbar with Partial View
+ 2.3.Authenticate with Full Name
+ 2.4.Update Views
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== Task 3: Gravatar, Notification and Transactional Emails
+ 3.1.Gravatar
+ 3.2.Notification
+ 3.3.Transactional Emails with Mandrill
+ 3.4.Transactional Emails with Sendgrid
+ 
+=== Task 4: Facebook Authentication
+ 4.1.Create App for Facebook
+ 4.2.Create Social Authentication
+ 4.3.Create User Info Page
+ 4.4.Create User Edit Profile Page
+
+=== Task 5: Room Creating
+ 5.1.Create Room (Model)
+ 5.2.Create Room (Controller)
+ 5.3.Create Room (View)
+ 5.4.Styling Our Views
+
+=== Task 6: Photos
+ 6.1.Install PaperClip
+ 6.2.Create Photo (Model)
+ 6.3.Create Photo (Controller)
+ 6.4.Create Photo (View)
+ 6.5.Remove Photos with AJAX
+
+=== Task 7: Create Views for Room
+ 7.1.Create Room Index (View)
+ 7.2.Create Room Show (View)
+ 7.3.Add Google Map
+ 7.4.Add Close-By Rooms
+ 
+=== Task 8: Reservations
+ 8.1.Create Reservations (Model)
+ 8.2.Create Reservations (Controller)
+ 8.3.Create Reservations (View)
+ 8.4.Add jQuery Date Picker
+ 
+=== Task 9: AJAX
+ 9.1.Refactoring Reservation Form
+ 9.2.AJAX for Start Date
+ 9.3.AJAX for End Date
+ 
+=== Task 10: More About Reservation
+ 10.1.Your Trips (Controller + View)
+ 10.2.My Reservations (Controller + View)
+ 10.3.Update User Info Page
+ 
+=== Task 11: Private Messages
+ 11.1.Analysing
+ 11.2.Conversations and Message (Model)
+ 11.3.Conversations and Message (Controller)
+ 11.4.Conversations and Message (View)
+ 11.5.Customise the View
+ 
+=== Task 12: Advanced Private Messages
+ 12.1.AJAX for Messages
+ 12.2.Real-time Messages
+ 
+=== Task 13: Reviews
+ 13.1.Review (Model)
+ 13.2.Review (Controller)
+ 13.3.Review (View)
+ 13.4.Adding Review Stars
+ 13.5.Improving Review System
+
+=== Task 14: Paypal
+ 14.1.How to work with PayPal
+ 14.2.Creating PayPal Sandbox
+ 14.3.Add PayPal
+ 
+=== Task 15: Searching
+ 15.1.Update Home Page
+ 15.2.Create Search View
+ 15.3.Search Room Function
+ 15.3.Add Google Map
