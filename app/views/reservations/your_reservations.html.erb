@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-3">
+		<ul class="sidebar-list">
+			<li class="sidebar-item"><%= link_to "Your Listing", rooms_path, class: "sidebar-link" %></li>
+			<li class="sidebar-item"><%= link_to "Your Reservations", your_reservations_path, class: "sidebar-link active" %></li>
+			<li class="sidebar-item"><%= link_to "Your Trips", your_trips_path, class: "sidebar-link" %></li>
+		</ul>
+	</div>
+	<div class="col-md-9">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Your Reservations
+			</div>
+			<div class="panel-body">
+				<% @rooms.each do |room| %>
+					
+					<% room.reservations.each do |reservation| %>
+						<% if reservation.status %>
+							<div class="row">
+								<div class="col-md-2">
+									<%= reservation.start_date.strftime('%v') %>
+								</div>	
+								<div class="col-md-6">
+									<%= link_to room_path(reservation.room) do %>
+										<%= image_tag reservation.room.photos[0].image.url(:thumb) if reservation.room.photos.length > 0 %>
+									<% end %>
+								</div>	
+								<div class="col-md-2">
+									<%= link_to user_path(reservation.user) do %>
+										<%= image_tag avatar_url(reservation.user), class: "img-circle avatar-medium" %>
+									<% end %>	
+								</div>	
+								<div class="col-md-2 right">
+									<h4>$<%= reservation.total %></h4>
+								</div>	
+							</div>
+							<hr>
+						<% end %>
+					<% end %>
+
+				<% end %>
+
+			</div>
+		</div>
+	</div>
+</div>

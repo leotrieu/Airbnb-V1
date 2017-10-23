@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 text-center">
+    
+    <%= link_to "Sign In with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-primary" %>
+    
+    <h2>Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render 'shared/devisemes' %>
+
+      <div class="form-group">        
+        <%= f.text_field :fullname, :class => 'form-control', :placeholder => 'Full Name', autofocus: true %>
+      </div>
+
+      <div class="form-group">        
+        <%= f.email_field :email, :class => 'form-control', :placeholder => 'Email' %>
+      </div>
+
+      <div class="form-group">        
+        <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, :class => 'form-control', :placeholder => 'Password',  autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up", :class => "btn btn-primary" %>
+      </div>
+    <% end %>
+
+  </div>
+</div>

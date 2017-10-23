@@ -1,0 +1,41 @@
+<div class="row">
+	
+	<div class="col-md-3 text-center">
+		<%= image_tag avatar_url(@other), class: "img-circle avatar-medium" %><br>
+		<strong><%= @other.fullname %></strong>
+		<%= link_to "View Profile", @other, class: "btn btn-default wide" %>
+	</div>
+
+	<div class="col-md-9">
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Conversation with <%= @other.fullname %>
+			</div>
+			<div class="panel-body">
+				<div class="container">
+					
+					<%= form_for [@conversation, @conversation.messages.new], remote: true do |f| %>
+						<div class="form-group">
+							<%= f.text_area :content, placeholder: "Add a personal message", class: "form-control" %>
+						</div>
+						<%= f.hidden_field :user_id, value: current_user.id %>
+
+						<div class="actions">
+							<%= f.submit "Send Message", class: "btn btn-primary" %>
+						</div>
+					<% end %>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="chat">
+			<%= render @messages, locals: {conversation: @conversation} %>
+		</div>
+
+	</div>
+
+</div>
+
+<%= subscribe_to conversation_messages_path(@conversation) %>
