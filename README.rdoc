@@ -2,11 +2,11 @@
 
 In this project, I will walk you through steps to develop app like AirBnb with core functionalities from scratch. You don't need to learn everything about HTML, CSS, Javascript or Ruby on Rails to just create an web app. In my methodology which I called POA (Product-Oriented-Approach), you just need to learn what you need. Doing this way, it won't make you a super star developer but will get you something REAL quickly and efficiently, especially for Entrepreneurs & Founders.
 
-https://www.dropbox.com/s/3tfshq6w09s1jnh/Screenshot%202017-10-23%2012.17.49.png?dl=0
+https://www.dropbox.com/s/3tfshq6w09s1jnh/Screenshot%202017-10-23%2012.17.49.png
 
-https://www.dropbox.com/s/8ja0iyjv4ft041k/Screenshot%202017-10-23%2012.18.29.png?dl=0
+https://www.dropbox.com/s/8ja0iyjv4ft041k/Screenshot%202017-10-23%2012.18.29.png
 
-https://www.dropbox.com/s/c5vhc2ifxjovymd/Screenshot%202017-10-23%2012.18.46.png?dl=0
+https://www.dropbox.com/s/c5vhc2ifxjovymd/Screenshot%202017-10-23%2012.18.46.png
 
 == Project will be broken down to small tasks like real-life projects.
 
